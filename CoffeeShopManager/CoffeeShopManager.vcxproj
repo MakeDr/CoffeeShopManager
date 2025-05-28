@@ -129,6 +129,11 @@
   <ItemGroup>
     <ClCompile Include="CoffeeShopManager.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Member.h" />
+    <ClInclude Include="MembershipCard.h" />
+    <ClInclude Include="Product.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
