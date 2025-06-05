@@ -1,4 +1,4 @@
-#pragma once // 헤더 파일 중복 포함 방지, 이거 완전 국룰임
+#pragma once // 헤더 파일 중복 포함 방지
 #include <iostream>
 #include <string>
 
@@ -16,7 +16,7 @@ public:
         this->price = price;
     }
 
-    // private 멤버는 밖에서 직접 못 건드니까, 값을 가져갈 수 있는 통로(Getter)를 열어주는 거야
+	// private 멤버는 밖에서 직접 못 건드니까, 값을 가져갈 수 있는 통로(Getter)를 열어줌
     int getId() const { return id; }
     std::string getName() const { return name; }
     int getPrice() const { return price; }
