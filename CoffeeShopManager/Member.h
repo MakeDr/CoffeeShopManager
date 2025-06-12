@@ -41,6 +41,7 @@ public:
     // 회원 정보 출력
     void display() const {
         std::cout << "회원번호: " << id << "\t이름: " << name << "\t연락처: " << phone
-            << "\t포인트: " << points << "\t잔액: " << card.getDeposit() << "원" << std::endl;
+            << "\t포인트: " << points
+            << "\t잔액: " << card.getDeposit() << "원" << std::endl;
     }
 };

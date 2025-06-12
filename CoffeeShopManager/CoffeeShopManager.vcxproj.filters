@@ -18,6 +18,12 @@
     <ClCompile Include="CoffeeShopManager.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="FileHandler.h">
+      <Filter>헤더 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ShopManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Product.h">
@@ -29,5 +35,16 @@
     <ClInclude Include="Member.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="Order.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="products.csv">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="members.csv">
+      <Filter>리소스 파일</Filter>
+    </None>
   </ItemGroup>
 </Project>

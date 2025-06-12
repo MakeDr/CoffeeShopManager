@@ -1,24 +1,34 @@
 ﻿#include <iostream>
 #include "ShopManager.h"
 
-int main() {
-    // 이제부턴 모든 걸 사장님(ShopManager)을 통해서 처리함
-    // getInstance()를 호출해서 유일한 사장님 객체를 불러옴
-    ShopManager& manager = ShopManager::getInstance();
+void showMainMenu() {
+    std::cout << "\n===== KOREATECH 커피숍 =====" << std::endl;
+    std::cout << "1. 주문하기" << std::endl;
+    std::cout << "2. 프로그램 종료" << std::endl;
+    std::cout << "===========================" << std::endl;
+    std::cout << ">> 선택: ";
+}
 
-    std::cout << "프로그램 시작! 파일에서 데이터를 로드합니다..." << std::endl;
-    // 이 한 줄이면 products.csv, members.csv에서 모든 정보를 읽어와서 객체로 싹 만들어줌
+int main() {
+    ShopManager& manager = ShopManager::getInstance();
     manager.loadData();
 
-    std::cout << "\n>> 데이터 로드 완료! <<\n";
-    // 로드가 잘 됐는지 전체 데이터를 출력해서 확인해보자
-    manager.displayAllData();
+    while (true) {
+        showMainMenu();
+        int choice;
+        std::cin >> choice;
 
-    // 프로그램이 종료되기 전에 데이터를 저장해야 하지만,
-    // saveData()는 아직 구현 안 했으니 그냥 넘어감
-    // manager.saveData(); 
-
-    std::cout << "\n프로그램을 종료합니다." << std::endl;
+        if (choice == 1) {
+            manager.processOrder();
+        }
+        else if (choice == 2) {
+            std::cout << "프로그램을 종료합니다." << std::endl;
+            break;
+        }
+        else {
+            std::cout << ">> 잘못된 입력입니다. 다시 선택해주세요." << std::endl;
+        }
+    }
 
     return 0;
 }

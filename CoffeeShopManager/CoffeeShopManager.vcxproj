@@ -128,11 +128,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CoffeeShopManager.cpp" />
+    <ClCompile Include="FileHandler.h" />
+    <ClCompile Include="ShopManager.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Member.h" />
     <ClInclude Include="MembershipCard.h" />
+    <ClInclude Include="Order.h" />
     <ClInclude Include="Product.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="members.csv" />
+    <None Include="products.csv" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
