@@ -15,36 +15,39 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CoffeeShopManager.cpp">
+    <None Include="x64\Debug\data\products.csv">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="x64\Debug\data\members.csv">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="x64\Debug\include\FileHandler.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\include\Member.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\include\MembershipCard.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\include\Order.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\include\Product.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="x64\Debug\include\ShopManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="x64\Debug\src\CoffeeShopManager.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="FileHandler.h">
-      <Filter>헤더 파일</Filter>
+    <ClCompile Include="x64\Debug\src\ShopManager.cpp">
+      <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ShopManager.h">
-      <Filter>헤더 파일</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Product.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="MembershipCard.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Member.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Order.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="products.csv">
-      <Filter>리소스 파일</Filter>
-    </None>
-    <None Include="members.csv">
-      <Filter>리소스 파일</Filter>
-    </None>
   </ItemGroup>
 </Project>

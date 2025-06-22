@@ -104,6 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)x64\Debug\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -127,19 +128,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CoffeeShopManager.cpp" />
-    <ClCompile Include="FileHandler.h" />
-    <ClCompile Include="ShopManager.h" />
+    <None Include="x64\Debug\data\members.csv" />
+    <None Include="x64\Debug\data\products.csv" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Member.h" />
-    <ClInclude Include="MembershipCard.h" />
-    <ClInclude Include="Order.h" />
-    <ClInclude Include="Product.h" />
+    <ClInclude Include="x64\Debug\include\FileHandler.h" />
+    <ClInclude Include="x64\Debug\include\Member.h" />
+    <ClInclude Include="x64\Debug\include\MembershipCard.h" />
+    <ClInclude Include="x64\Debug\include\Order.h" />
+    <ClInclude Include="x64\Debug\include\Product.h" />
+    <ClInclude Include="x64\Debug\include\ShopManager.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="members.csv" />
-    <None Include="products.csv" />
+    <ClCompile Include="x64\Debug\src\CoffeeShopManager.cpp" />
+    <ClCompile Include="x64\Debug\src\ShopManager.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
